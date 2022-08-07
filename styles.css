@@ -1,0 +1,67 @@
+
+.app{
+    border: 6px solid #B4E197;
+    margin: 50px auto;
+    padding: 10px;
+    max-width: 750px;
+    border-radius: 12px;
+    
+}
+h1,
+h2,
+h5,
+h6,
+.temperature,
+.icon-cloudy {
+    color: #4E944F;
+    font-family: 'Patua One', cursive;
+    font-size: 40px;
+}
+h2 {
+    text-align: center;
+}
+.text-add {
+    text-align: right;
+}
+.temperature{
+    font-size: 50px;
+    margin: 25px;
+}
+.fa-solid,
+.fa-cloud-sun {
+    color: #F8CB2E;
+     position: relative;
+  left: 60px;
+  font-size: 100px;
+}
+h3 {
+    font-size: 20px;
+     font-family: 'Patua One', cursive;
+    color: #4E944F;
+}
+.additional {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 500px;
+    margin: 30px 10px;
+
+}
+.text-everyday {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    text-align: center;
+    color: #4E944F;
+    margin: 25px;
+}
+.weekday {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+      color: #4E944F;
+      font-weight: bold;
+      margin: 0 auto;
+}
+.card-body {
+    border: 6px solid #B4E197;
+    border-radius: 6px;
+}
+
