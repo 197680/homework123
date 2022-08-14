@@ -3,15 +3,12 @@
     border: 6px solid #B4E197;
     margin: 50px auto;
     padding: 10px;
-    max-width: 750px;
+    max-width: 700px;
     border-radius: 12px;
     
 }
 h1,
 h2,
-h5,
-h6,
-.temperature,
 .icon-cloudy {
     color: #4E944F;
     font-family: 'Patua One', cursive;
@@ -20,10 +17,18 @@ h6,
 h2 {
     text-align: center;
 }
+h6,
+h5,
+.col,
+.temperature {
+     font-family: 'Dancing Script', cursive;
+      color: #4E944F;
+       font-size: 40px;
+}
 .text-add {
     text-align: right;
 }
-.temperature{
+.temperature {
     font-size: 50px;
     margin: 25px;
 }
@@ -35,7 +40,7 @@ h2 {
   font-size: 100px;
 }
 h3 {
-    font-size: 20px;
+    font-size: 25px;
      font-family: 'Patua One', cursive;
     color: #4E944F;
 }
@@ -64,4 +69,6 @@ h3 {
     border: 6px solid #B4E197;
     border-radius: 6px;
 }
-
+.form-control btn btn-primary {
+     text-align: right;
+}

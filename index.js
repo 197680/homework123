@@ -23,7 +23,6 @@ let h5 = document.querySelector("h5");
 h5.innerHTML = `${hours}:${minutes}, ${day}`;
 
 
-
 // Завдання2
 
 //function search(event) {
@@ -54,11 +53,22 @@ searchForm.addEventListener("submit", handleSubmit);
 
 
 function displayTemperature(response) {
-    document.querySelector("#city").innerHTML = response.data.name;
-    document.querySelector("#temperature").innerHTML = Math.round(response.data.main.temp);
-    document.querySelector("text-everyday").innerHTML = response.data.weather[0].main;
-}
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(response.data.main.temp);
+  let cityElement = document.querySelector("#city");
+   cityElement.innerHTML = response.data.name;
+  let descriptionElement = document.querySelector("#text-everyday");
+  descriptionElement.innerHTML = response.data.weather[0].main;
+  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+  document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
+    let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 
+}
 
 
 

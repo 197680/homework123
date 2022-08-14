@@ -18,37 +18,36 @@
     <div class="container">
 <header>
     <h1>
-     weather forecast
+     Weather forecast
     </h1>
 </header> 
 <main>
-    <h5></h5>
-    <h6 id="city">City</h6>
+   
+    <h6 id="city">Zhytomyr</h6>
+     <h5></h5>
         <form id="search-form" class="text-add">
-   <input id="search-text-input" type="text" placeholder="Search city here...">
-    <input type="submit" lass="form-control btn btn-primary" value="Search" />
+   <input id="search-text-input" class="mb-3" type="text" placeholder="Search city here..." autocomplete="off">
+    <input type="submit" class="btn btn-primary" value="Search" />
 </form>
 <div class="row">
 <div class="col">
-<i class="fa-solid fa-cloud-sun"></i>
+<img src="" alt="Clear" id="icon" class="float-left" />
 </div>
 <div class="col">
-    <span class="temperature" id="temperature">28 &#8451</span>
+    <span class="temperature" id="temperature"></span>°C
 </div>
 </div>
 <p class="text-everyday" id="text-everyday">
-    Sunny with small clouds
 </p>
 <div class="row">
-    <div class="col-4">
-        
-        <h3 id="humidity">Humidity: <span class="additional">85%</span></h3>
+    <div class="col-4"> 
+        <h3>Humidity: <span class="additional" id="humidity"></span>%</h3>
     </div>
     <div class="col-4">
-        <h3 id="wind">Wind: <span class="additional">15 km/h</span></h3>
+        <h3>Wind: <span class="additional" id="wind"></span>km/h</h3>
     </div>
     <div class="col-4">
-        <h3 id="rain">Chance of rain: <span class="additional">55%</span></h3> 
+        <h3> Feels like: <span class="additional" id="feels"></span>°C</h3>
     </div>
 </div>
 <div class="card border-primary mb-6" style="max-width: 60rem;">
